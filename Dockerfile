@@ -9,5 +9,5 @@ RUN export DOTNET_CLI_TELEMETRY_OPTOUT=1 \
     && dnf update -y \
     && dnf install -y https://packages.microsoft.com/config/rhel/7/packages-microsoft-prod.rpm \
     && dnf install -y https://packages.microsoft.com/rhel/7/prod/dotnet-host-2.1.0-x64.rpm \
-    && dnf install dotnet-runtime-2.1 wget libunwind nano mc compat-openssl10 icu iputils xz gssntlmssp -y \
+    && dnf install aspnetcore-runtime-2.1 dotnet-runtime-2.1 wget libunwind nano mc compat-openssl10 icu iputils xz gssntlmssp -y \
     && dnf clean all
